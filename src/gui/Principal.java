@@ -41,6 +41,7 @@ public class Principal extends javax.swing.JFrame {
         });
 
         jButton2.setText("Chocolates");
+        jButton2.setEnabled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -48,6 +49,7 @@ public class Principal extends javax.swing.JFrame {
         });
 
         jButton3.setText("Limonada");
+        jButton3.setEnabled(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -55,6 +57,7 @@ public class Principal extends javax.swing.JFrame {
         });
 
         jButton4.setText("Ensalada");
+        jButton4.setEnabled(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -180,6 +183,10 @@ public class Principal extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
         factu = new Factura();
+        
+        jButton2.setEnabled(true);
+        jButton3.setEnabled(true);
+        jButton4.setEnabled(true);
         
         mostarFactura();
         
